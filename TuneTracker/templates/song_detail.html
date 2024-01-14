@@ -1,0 +1,15 @@
+{% cache timeout cache_name dynamic_var %}
+    <!-- TuneTracker/templates/song_detail.html -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>{{ song.title }} by {{ song.artist }}</title>
+    </head>
+    <body>
+        <h1>{{ song.title }} by {{ song.artist }}</h1>
+        <p>Artist: {{ song.artist }}</p>
+        <p>Title: {{ song.title }}</p>
+    </body>
+    </html>
+    
+{% endcache %}
